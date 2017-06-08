@@ -1,0 +1,54 @@
+header {
+  background-color: green;
+  grid-area: header;
+}
+
+nav {
+  background-color: light-blue;
+  grid-area: nav;
+}
+
+article {
+  background-color: yellow;
+  grid-area: article;
+}
+
+aside {
+  background-color: orange;
+  grid-area: aside;
+}
+
+footer {
+  background-color: red;
+  grid-area: footer;
+}
+
+/*body {
+  display: grid;
+  grid-template-columns: 140px 700px 140px;
+  grid-template-rows: 100px 400px 200px;
+  grid-template-areas:
+    "header header header"
+    "nav article aside"
+    "footer footer footer";
+}*/
+
+/*body {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: 100px 400px 200px;
+  grid-template-areas:
+    "header header header"
+    "nav article aside"
+    "footer footer footer";
+}*/
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 400px 200px;
+  grid-template-areas:
+    "header header header"
+    "nav article aside"
+    "footer footer footer";
+}
